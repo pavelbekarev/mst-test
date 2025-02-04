@@ -1,0 +1,124 @@
+.header {
+  --headerMenuBarTitleFontSize: 3rem;
+  --headerMenuBarTextFontSize: 2rem;
+  display: grid;
+  grid-template-areas: "item1 item2";
+  grid-template-columns: 65% 35%;
+  width: 100%;
+  height: 100%;
+  /* min-height: 90vh; */
+  background: var(--colorEerieBlack);
+  padding-bottom: 5rem;
+  margin-bottom: 10rem;
+}
+
+.header__textPlace {
+  display: grid;
+  grid-area: item1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  height: 100%;
+}
+
+.header__textPlace__menuBar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60%;
+  margin-right: 15rem;
+}
+
+.header__textPlace__menuBar__title {
+  font-size: var(--headerMenuBarTitleFontSize);
+  color: #fff;
+}
+
+.header__textPlace__menuBar__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10rem;
+}
+
+.header__textPlace__menuBar__list__item a {
+  text-decoration: none;
+  font-size: var(--headerMenuBarTextFontSize);
+  color: #fff;
+}
+
+.header__textPlace__content {
+  margin-top: 30.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__textPlace__content__title {
+  font-family: "";
+  margin: 0;
+  width: 70%;
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: 9rem;
+  color: #fff;
+}
+
+.header__textPlace__content__text {
+  color: #fff;
+  font-family: "";
+  margin-top: 2rem;
+  font-size: 50px;
+}
+
+.header__textPlace__content__statisticList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 1;
+  gap: 2rem;
+}
+
+.header__textPlace__content__statisticList__checkbox {
+  width: 5%;
+  aspect-ratio: 1 / 1;
+}
+
+.header__textPlace__content__statisticList__text {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header__textPlace__content__button {
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 8rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.header__textPlace__content__button:hover {
+  background-color: var(--colorTimberwolf);
+  font-size: 2rem;  
+  transition: all 0.2s ease;
+}
+
+.header__imagePlace {
+  grid-area: item2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__imagePlace img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
