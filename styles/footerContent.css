@@ -1,0 +1,76 @@
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+.footer__content__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content__item__title {
+    font-size: 4rem;
+    font-family: "Prata-Regular";
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+.footer__content__item__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 3rem;
+    line-height: 2rem;
+    transition: all 0.3s ease;
+}
+
+.footer__content__item__icons a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.footer__content__item__text {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer__content__item__text:last-child {
+    text-align: right;
+}
+
+.footer__content__item__text:nth-child(2) a {
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer__content__button {
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+}
+
+.footer__content__button:hover {
+    background-color: var(--colorTimberwolf);
+    font-size: 2rem;  
+    transition: all 0.2s ease;
+}
