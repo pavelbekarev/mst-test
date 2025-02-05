@@ -133,6 +133,9 @@
 
 .header__imagePlace {
   grid-area: item2;
+  background: url("../assets/headerImage.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,8 +143,14 @@
   height: 100%;
 }
 
-.header__imagePlace img {
+/* .header__imagePlace img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+@media (max-width: 1690px) {
+  .header__textPlace__menuBar {
+    gap: 40%;
+  }
 }
