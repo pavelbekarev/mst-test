@@ -56,3 +56,32 @@
 .footer__sectionMenu__menu__item a:hover {
     color: #929292;
 }
+
+@media (max-width: 1270px) {
+    .footer__content {
+        justify-content: space-evenly !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__content__item:last-child {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 510px) {
+    .footer__sectionMenu__menu {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .footer__sectionMenu__menu {
+        gap: 2rem;
+    }
+}

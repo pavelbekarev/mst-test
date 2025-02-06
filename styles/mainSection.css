@@ -103,3 +103,39 @@
     object-fit: cover;
   }
 }
+
+
+@media (max-width: 1880px) {
+  .leftSideImage {
+    width: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainSection {
+    grid-template-areas: 
+      "item1"
+      "item2"
+      "item3";
+
+    grid-template-columns: 100%;
+  }
+
+  .leftSideImage {
+    width: 90%;
+    margin: 5rem auto;
+  }
+  
+  .rightSideImage {
+    width: 90%;
+    margin: 5rem auto;
+  }
+  
+  .mainContent__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    width: auto;
+  }
+}
